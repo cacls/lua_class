@@ -3,7 +3,7 @@ desc:   base class defination
         c++ like
 --]]----------------------------------------------------------------------
 
-function getSuper(t, k)
+local function getSuper(t, k)
     if type(t)~="table" then return end
     if t[k] ~=nil then return t[k] end
     return getSuper(t.super)
